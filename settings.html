@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Integración Shopify/Send Pulse</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/plugins/switchery/switchery.min.css" rel="stylesheet" />
+
+    <link href="css/plugins/select2/select2.min.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li>
+                    <a href="mailing_lists.html"><i class="fa fa-list-ul"></i> <span class="nav-label">Listas de correos</span></a>
+                </li>
+                <li>
+                    <a href="campaigns.html"><i class="fa fa-bullhorn"></i> <span class="nav-label">Campañas</span></a>
+                </li>
+                <li>
+                    <a href="templates.html"><i class="fa fa-file-text-o"></i> <span class="nav-label">Plantillas</span></a>
+                </li>
+                <li class="active">
+                    <a href="settings.html"><i class="fa fa-cog"></i> <span class="nav-label">Ajustes</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+        <div class="row border-bottom">
+        <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+        </div>
+            <ul class="nav navbar-top-links navbar-right">
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="mailbox.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i>  16 mensages nuevos
+                                    <span class="pull-right text-muted small">Hace 4 minutos</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="text-center link-block">
+                                <a href="notifications.html">
+                                    <strong>Ver todas las alertas</strong>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav>
+        </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>Ajustes</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="active">
+                            <strong>Ajustes</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <!--span class="label label-primary pull-right">NEW</span-->
+                            <h5>Shopify</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <form role="form" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">API Key</label>
+                                    <input type="email" placeholder="API Key" id="exampleInputEmail2"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">API Pass</label>
+                                    <input type="password" placeholder="API Pass" id="exampleInputPassword2"
+                                           class="form-control">
+                                </div>
+                                <!--button class="btn btn-white" type="submit">Guardar</button-->
+                            </form>
+                        </div>
+                    </div>
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <!--span class="label label-primary pull-right">NEW</span-->
+                            <h5>Send Pulse</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <form role="form" class="form-inline">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail2" class="sr-only">API ID</label>
+                                    <input type="email" placeholder="API ID" id="exampleInputEmail2"
+                                           class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword2" class="sr-only">API Secret</label>
+                                    <input type="password" placeholder="API Secret" id="exampleInputPassword2"
+                                           class="form-control">
+                                </div>
+                                <!--button class="btn btn-white" type="submit">Guardar</button-->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5>Notificaciones al cliente</h5>
+                        </div>
+                        <div class="ibox-content">
+                          <strong>Productos</strong>
+                          <ul class="list-group clear-list">
+                              <li class="list-group-item fist-item">
+                                  <span class="pull-right"> <input type="checkbox" class="js-switch" checked /> </span>
+                                  Creación
+                              </li>
+                              <li class="list-group-item">
+                                  <span class="pull-right"> <input type="checkbox" class="js-switch" checked /> </span>
+                                   Restock
+                              </li>
+                          </ul>
+                          <strong>Colecciones</strong>
+                          <ul class="list-group clear-list">
+                              <li class="list-group-item fist-item">
+                                  <span class="pull-right"> <input type="checkbox" class="js-switch" checked /> </span>
+                                  Creación
+                              </li>
+                              <li class="list-group-item">
+                                  <span class="pull-right"> <input type="checkbox" class="js-switch" checked /> </span>
+                                   Actualización
+                              </li>
+                          </ul>
+                            <p style="margin-top:3em">
+                                *Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-3">
+                  <div class="ibox">
+                      <div class="ibox-title">
+                          <!--span class="label label-primary pull-right">NEW</span-->
+                          <h5>Frecuencia de Envío</h5>
+                      </div>
+                      <div class="ibox-content">
+                        <select class="select2_demo_1 form-control">
+                            <option></option>
+                            <option value="1">Semana</option>
+                            <option value="2">Quincena</option>
+                            <option value="3">Mes</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="ibox">
+                      <div class="ibox-title">
+                          <h5>Webhooks</h5>
+                      </div>
+                      <div class="ibox-content">
+                        <strong>Shopify</strong>
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class=" label label-primary pull-right"> activo </span>
+                                Product Creation
+                            </li>
+                            <li class="list-group-item">
+                                <span class="label pull-right"> inactivo </span>
+                                Product Update
+                            </li>
+                            <li class="list-group-item fist-item">
+                                <span class=" label label-primary pull-right"> activo </span>
+                                Customer Creation
+                            </li>
+                            <li class="list-group-item fist-item">
+                                <span class=" label label-primary pull-right"> activo </span>
+                                Customer Update
+                            </li>
+                        </ul>
+                        <strong>Send Pulse</strong>
+                        <ul class="list-group clear-list">
+                            <li class="list-group-item fist-item">
+                                <span class=" label label-primary pull-right"> activo </span>
+                                Events
+                            </li>
+                        </ul>
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                Foot Right
+            </div>
+            <div>
+                Foot Left
+            </div>
+        </div>
+
+        </div>
+        </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- Switchery -->
+    <script src="js/plugins/switchery/switchery.min.js" ></script>
+    <!-- Select2 -->
+    <script src="js/plugins/select2/select2.full.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+            elems.forEach(function(html) {
+              var switchery = new Switchery(html, { color: '#1AB394', size: 'small' });
+            });
+
+            $(".select2_demo_1").select2({
+                placeholder: "Frecuencia de envío",
+                minimumResultsForSearch: -1,
+                allowClear: true
+            });
+
+        });
+    </script>
+</body>
+
+</html>
